@@ -26,12 +26,23 @@ class Passwords
      * @var int
      */
     private static $algo = PASSWORD_DEFAULT;
+
     /**
      * Un array asociativo de opciones. Actualmente solo se pasa el coste.
      * 
      * @var array
      */
     private static $options = ['cost' => 10];
+
+    /**
+     * Modifica el coste de creación
+     *
+     * @return void
+     */
+    public static function setCost($cost)
+    {
+        self::$options['cost'] = $cost;
+    }
 
     /**
      * Crea un hash de contraseña
