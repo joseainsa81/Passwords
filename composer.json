@@ -1,0 +1,25 @@
+{
+    "name": "joseainsa81/passwords",
+    "description": "Clase para el manejo de contraseñas",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": ["php", "passwords"],
+    "readme": "README.md",
+    "time": "2020-01-01",
+    "license": "CC BY 4.0",
+    "authors": [
+        {
+            "name": "José Julián Aínsa Gutiérrez",
+            "email": "joseainsa81@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "joseainsa81\\Passwords\\": "src/"
+        }
+    }
+}
